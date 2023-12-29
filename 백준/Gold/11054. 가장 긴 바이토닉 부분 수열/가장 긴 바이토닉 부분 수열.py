@@ -12,8 +12,8 @@ for i in range(1,n):
       decrease[i] = max(decrease[i], decrease[j] + 1);
 
 decrease.reverse();
-result = [0 for i in range(n)];
+result = 0;
 for i in range(n):
-  result[i] = increase[i] + decrease[i] -1;
+  result = max(result, increase[i] + decrease[i] -1);
 
-print(max(result));
+print(result);
