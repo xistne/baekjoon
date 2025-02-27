@@ -1,4 +1,7 @@
-import sys
-
-for x in sys.stdin:
-    print(sum(map(int,x.split())));
+while(True):
+  try:
+    n,m = map(int,input().split())
+    print(n+m)
+  
+  except:
+    break
