@@ -1,6 +1,7 @@
-import sys
+str = input()
 
-a = sys.stdin.readline();
-
-for i in range(0,len(a),10):
-    print(a[i:i+10]);
+for i in range(0,len(str),10):
+  if i+10 > len(str):
+    print(str[i:])
+  else:
+    print(str[i:i+10])
