@@ -1,6 +1,5 @@
-import sys
-
-n = int(sys.stdin.readline());
+n = int(input())
 
 for i in range(n):
-    print(sum(map(int,input().split(','))));
+  n,m = map(int,input().split(","))
+  print(n+m)
