@@ -1,7 +1,5 @@
-import sys
-
-while True:
-    a, b = map(int,input().split());
-    if a == 0 and b == 0:
-        break;
-    print(a+b);
+while(True):
+  n,m = map(int,input().split())
+  if n==m==0 :
+    break;
+  print(n+m)
