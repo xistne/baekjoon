@@ -6,9 +6,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         while(true) {
-            String line = br.readLine();
-            if(line == null) break;
-            String[] strArr = line.split(" ");
+            String[] strArr = br.readLine().split(" ");
             if(strArr[0].equals("0") && strArr[1].equals("0")) {
                 break;
             }
