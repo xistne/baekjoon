@@ -1,4 +1,5 @@
-n = int(input());
-nList = list(map(int, input().split()));
+n = int(input())
 
-print(f'{min(nList)} {max(nList)}');
+arr = list(map(int,input().split()))
+
+print(min(arr),max(arr))
