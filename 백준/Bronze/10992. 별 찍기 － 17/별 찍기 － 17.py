@@ -1,7 +1,12 @@
-n = int(input());
-print(' '*(n-1)+'*');
-for i in range(2,n+1):
-    if(i == n) :
-        print('*'*(2*n-1));
-        break;
-    print(' '*(n-i)+'*'+' '*(2*(i-1)-1)+'*');
+n = int(input())
+
+for i in range(1,n):
+  print(" "*(n-i),end="")
+  print("*",end="")
+  print(" "*(2*i-3),end="")
+  if i != 1:    
+    print("*")
+  else:
+    print()
+
+print("*"*(2*n-1))
