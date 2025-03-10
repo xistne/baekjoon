@@ -1,10 +1,13 @@
-n = int(input());
-data = [];
+import sys
+input = sys.stdin.readline
+n = int(input())
 
+arr = []
 for i in range(n):
-    data.append(list(input().split()));
-    
-data.sort(key = lambda x: int(x[0]));
+    age, name = input().split()
+    arr.append((int(age),i,name))
 
-for i in range(n):
-    print(data[i][0],data[i][1]);
+arr.sort(key= lambda x : (x[0], x[1]))
+
+for i in arr:
+    print(i[0], i[2])
