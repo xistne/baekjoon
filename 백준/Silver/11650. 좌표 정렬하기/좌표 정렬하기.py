@@ -1,8 +1,10 @@
+import sys
+input = sys.stdin.readline
 n = int(input())
-result=[]
-for i in range(n):
-  x,y = map(int,input().split())
-  result.append(((x,y)))
-result.sort()
-for i in result:
-  print(i[0],i[1])
+
+arr = [tuple(map(int,input().split())) for i in range(n)]
+
+arr.sort()
+
+for i in arr:
+    print(i[0], i[1])
