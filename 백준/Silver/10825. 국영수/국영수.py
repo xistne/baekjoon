@@ -1,10 +1,12 @@
-n = int(input());
-data = [];
-for i in range(n):
-  name, a, b, c = input().split();
-  data.append([ a, b, c, name]);
-
-data.sort(key = lambda x: (-int(x[0]), int(x[1]), -int(x[2]), x[3]));
+import sys
+input = sys.stdin.readline
+n = int(input())
+arr = []
 
 for i in range(n):
-  print(data[i][3]);
+    arr.append(input().split())
+
+arr.sort(key = lambda x: (-int(x[1]),int(x[2]),-int(x[3]),x[0]))
+
+for i in arr:
+    print(i[0])
