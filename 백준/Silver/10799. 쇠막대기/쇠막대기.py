@@ -1,16 +1,16 @@
-data = list(input());
-result = 0;
-arr = [];
+arr = list(input())
 
-for i in range(len(data)):
-  if data[i] == '(':
-    arr.append(data[i]);
-  else:
-    if data[i-1] == '(':
-      arr.pop();
-      result += len(arr);
+arr_stack = []
+result = 0
+for i in range(len(arr)):
+    if arr[i] == '(':
+        arr_stack.append('(')
     else:
-      arr.pop();
-      result += 1;
+        arr_stack.pop()
+        if arr[i-1] == '(':
+            result += len(arr_stack)
+        else:
+            result += 1
 
-print(result);
+print(result)
+    
